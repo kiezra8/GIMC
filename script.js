@@ -196,23 +196,27 @@ function animateCounter(el) {
 function initContactForm() {
   const form    = document.getElementById('contactForm');
   const submit  = document.getElementById('contactSubmit');
-  const success = document.getElementById('formSuccess');
 
   if (!form) return;
 
   form.addEventListener('submit', e => {
     e.preventDefault();
-    submit.disabled = true;
-    submit.querySelector('.btn-text').textContent = 'Sending…';
-
-    // Simulate async send
-    setTimeout(() => {
-      submit.disabled = false;
-      submit.querySelector('.btn-text').textContent = 'Send Message';
-      success.style.display = 'block';
-      form.reset();
-      setTimeout(() => { success.style.display = 'none'; }, 5000);
-    }, 1500);
+    
+    // Get values
+    const name    = document.getElementById('contactName').value.trim();
+    const email   = document.getElementById('contactEmail').value.trim();
+    const subject = document.getElementById('contactSubject').value;
+    const message = document.getElementById('contactMessage').value.trim();
+    
+    // Build WhatsApp message
+    const waText = `Hello GIMC!\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n*Message:* ${message}`;
+    const encodedText = encodeURIComponent(waText);
+    
+    // Open WhatsApp (Uganda country code +256)
+    window.open(`https://wa.me/256705080595?text=${encodedText}`, '_blank');
+    
+    // Reset form after sending
+    form.reset();
   });
 }
 
