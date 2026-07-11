@@ -54,7 +54,7 @@
   </nav>
 
   <!-- ===== HERO CAROUSEL ===== -->
-  <section class="hero" id="home">
+  <section class="hero hero--short" id="home">
     <div class="hero-carousel" id="heroCarousel">
 
       <!-- Slide 1 -->
@@ -153,7 +153,7 @@
             <div class="floating-icon">🏥</div>
             <div>
               <strong>Founded in Gomba</strong>
-              <p>Uganda · Est. 2022</p>
+              <p>Uganda · Est. 2025</p>
             </div>
           </div>
         </div>
@@ -186,33 +186,58 @@
         <p class="section-subtitle">Three pillars guide everything we do — from the clinics we run to the lectures we deliver.</p>
       </div>
       <div class="mission-cards">
-        <div class="mission-card reveal">
-          <div class="mission-icon">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#00d4aa" stroke-width="2"/><path d="M20 10v20M10 20h20" stroke="#00d4aa" stroke-width="3" stroke-linecap="round"/></svg>
+
+        <!-- Mission Card 1: Service -->
+        <div class="mission-card reveal" style="--mission-color:#00d4aa">
+          <div class="mission-bg"
+               style="background-image:url('images/mission_service.jpg')"
+               data-mission-fallback="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=900&q=80"></div>
+          <div class="mission-overlay"></div>
+          <div class="mission-content-wrap">
+            <div class="mission-num">01</div>
+            <div class="mission-icon">
+              <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#00d4aa" stroke-width="2"/><path d="M20 10v20M10 20h20" stroke="#00d4aa" stroke-width="3" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Service</h3>
+            <p>We go where the need is greatest. Our outreaches bring free medical consultations, screenings, and treatments to communities that rarely see a doctor — fueled entirely by volunteer spirit.</p>
+            <div class="mission-highlight">Free consultations · Mobile clinics · Emergency response</div>
           </div>
-          <div class="mission-num">01</div>
-          <h3>Service</h3>
-          <p>We go where the need is greatest. Our outreaches bring free medical consultations, screenings, and treatments to communities that rarely see a doctor — fueled entirely by volunteer spirit.</p>
-          <div class="mission-highlight">Free consultations · Mobile clinics · Emergency response</div>
         </div>
-        <div class="mission-card reveal reveal-delay-1">
-          <div class="mission-icon">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#007bff" stroke-width="2"/><path d="M13 20l5 5 9-9" stroke="#007bff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+        <!-- Mission Card 2: Professionalism -->
+        <div class="mission-card reveal reveal-delay-1" style="--mission-color:#007bff">
+          <div class="mission-bg"
+               style="background-image:url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=900&q=80')"
+               data-mission-fallback="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=900&q=80"></div>
+          <div class="mission-overlay" style="background:linear-gradient(to top,rgba(0,20,60,0.97) 0%,rgba(0,30,80,0.75) 50%,rgba(0,20,60,0.35) 100%)"></div>
+          <div class="mission-content-wrap">
+            <div class="mission-num">02</div>
+            <div class="mission-icon">
+              <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#007bff" stroke-width="2"/><path d="M13 20l5 5 9-9" stroke="#007bff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Professionalism</h3>
+            <p>We uphold the highest medical and ethical standards in everything we do. Our members are trained not just in medicine but in communication, leadership, and responsible practice.</p>
+            <div class="mission-highlight">Ethics · Continuous learning · Mentorship</div>
           </div>
-          <div class="mission-num">02</div>
-          <h3>Professionalism</h3>
-          <p>We uphold the highest medical and ethical standards in everything we do. Our members are trained not just in medicine but in communication, leadership, and responsible practice.</p>
-          <div class="mission-highlight">Ethics · Continuous learning · Mentorship</div>
         </div>
-        <div class="mission-card reveal reveal-delay-2">
-          <div class="mission-icon">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#a855f7" stroke-width="2"/><path d="M20 13c-4 0-7 3-7 7s3 7 7 7 7-3 7-7-3-7-7-7z" stroke="#a855f7" stroke-width="2.5"/><path d="M20 17v3l2 2" stroke="#a855f7" stroke-width="2" stroke-linecap="round"/></svg>
+
+        <!-- Mission Card 3: Community Health -->
+        <div class="mission-card reveal reveal-delay-2" style="--mission-color:#a855f7">
+          <div class="mission-bg"
+               style="background-image:url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=900&q=80')"
+               data-mission-fallback="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=80"></div>
+          <div class="mission-overlay" style="background:linear-gradient(to top,rgba(40,0,80,0.97) 0%,rgba(60,0,100,0.75) 50%,rgba(40,0,80,0.35) 100%)"></div>
+          <div class="mission-content-wrap">
+            <div class="mission-num">03</div>
+            <div class="mission-icon">
+              <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="19" stroke="#a855f7" stroke-width="2"/><path d="M20 13c-4 0-7 3-7 7s3 7 7 7 7-3 7-7-3-7-7-7z" stroke="#a855f7" stroke-width="2.5"/><path d="M20 17v3l2 2" stroke="#a855f7" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Community Health</h3>
+            <p>We address the root causes of poor health — poverty, lack of information, distance from facilities. Through education and advocacy, we empower communities to take charge of their wellbeing.</p>
+            <div class="mission-highlight">Prevention · Education · Advocacy</div>
           </div>
-          <div class="mission-num">03</div>
-          <h3>Community Health</h3>
-          <p>We address the root causes of poor health — poverty, lack of information, distance from facilities. Through education and advocacy, we empower communities to take charge of their wellbeing.</p>
-          <div class="mission-highlight">Prevention · Education · Advocacy</div>
         </div>
+
       </div>
     </div>
   </section>
@@ -246,7 +271,7 @@
             </div>
           </div>
           <div class="gallery-item reveal reveal-delay-2">
-            <img src="images/maternal.png" alt="Maternal health outreach" loading="lazy" />
+            <img src="images/prog_maternal.jpg" alt="Maternal health outreach" loading="lazy" />
             <div class="gallery-overlay">
               <div class="gallery-tag">Maternal Health</div>
               <h3>Prenatal Care Camp</h3>
@@ -298,7 +323,7 @@
   </section>
 
   <!-- ===== PROGRAMS SECTION ===== -->
-  <section class="programs section" id="programs">
+  <section class="programs section-short programs" id="programs">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-tag">What We Do</span>
@@ -306,77 +331,113 @@
         <p class="section-subtitle">Six pillars of community health — each designed to address a critical gap in Gomba's healthcare landscape.</p>
       </div>
       <div class="programs-grid">
-        <div class="program-card reveal">
-          <div class="program-icon" style="background: linear-gradient(135deg,#00d4aa22,#00d4aa44); color:#00d4aa">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z" stroke="currentColor" stroke-width="2"/><path d="M16 10v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+
+        <!-- Program 1 -->
+        <div class="program-card reveal" style="--prog-color:#00d4aa">
+          <div class="program-bg" style="background-image:url('images/prog_health_info.jpg')" data-prog-fallback="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"></div>
+          <div class="program-overlay"></div>
+          <div class="program-body">
+            <div class="program-icon" style="background:rgba(0,212,170,0.2);color:#00d4aa">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z" stroke="currentColor" stroke-width="2"/><path d="M16 10v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Health Information Access</h3>
+            <p>Distributing accurate, easy-to-understand health information in local languages through flyers, radio, and community dialogues.</p>
+            <ul class="program-features">
+              <li>Local language resources</li>
+              <li>Radio health programs</li>
+              <li>Digital health literacy</li>
+            </ul>
           </div>
-          <h3>Health Information Access</h3>
-          <p>Distributing accurate, easy-to-understand health information in local languages through flyers, radio, and community dialogues.</p>
-          <ul class="program-features">
-            <li>Local language resources</li>
-            <li>Radio health programs</li>
-            <li>Digital health literacy</li>
-          </ul>
         </div>
-        <div class="program-card reveal reveal-delay-1">
-          <div class="program-icon" style="background: linear-gradient(135deg,#007bff22,#007bff44); color:#007bff">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4v24M4 16h24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+
+        <!-- Program 2 -->
+        <div class="program-card reveal reveal-delay-1" style="--prog-color:#007bff">
+          <div class="program-bg" style="background-image:url('images/prog_preventive.jpg')" data-prog-fallback="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80"></div>
+          <div class="program-overlay"></div>
+          <div class="program-body">
+            <div class="program-icon" style="background:rgba(0,123,255,0.2);color:#007bff">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M16 4v24M4 16h24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Preventive Health Services</h3>
+            <p>Free screenings, immunizations, and preventive care clinics that catch disease early and keep communities healthy.</p>
+            <ul class="program-features">
+              <li>BP &amp; diabetes screening</li>
+              <li>Immunization drives</li>
+              <li>Malaria prevention</li>
+            </ul>
           </div>
-          <h3>Preventive Health Services</h3>
-          <p>Free screenings, immunizations, and preventive care clinics that catch disease early and keep communities healthy.</p>
-          <ul class="program-features">
-            <li>BP & diabetes screening</li>
-            <li>Immunization drives</li>
-            <li>Malaria prevention</li>
-          </ul>
         </div>
-        <div class="program-card reveal reveal-delay-2">
-          <div class="program-icon" style="background: linear-gradient(135deg,#f59e0b22,#f59e0b44); color:#f59e0b">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="8" width="24" height="16" rx="3" stroke="currentColor" stroke-width="2"/><path d="M10 14h12M10 18h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+
+        <!-- Program 3 -->
+        <div class="program-card reveal reveal-delay-2" style="--prog-color:#f59e0b">
+          <div class="program-bg" style="background-image:url('images/prog_education.jpg')" data-prog-fallback="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"></div>
+          <div class="program-overlay"></div>
+          <div class="program-body">
+            <div class="program-icon" style="background:rgba(245,158,11,0.2);color:#f59e0b">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect x="4" y="8" width="24" height="16" rx="3" stroke="currentColor" stroke-width="2"/><path d="M10 14h12M10 18h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Health Education</h3>
+            <p>Interactive workshops and school programs that teach hygiene, nutrition, sexual health, and disease prevention from an early age.</p>
+            <ul class="program-features">
+              <li>School health talks</li>
+              <li>Nutrition workshops</li>
+              <li>Hygiene campaigns</li>
+            </ul>
           </div>
-          <h3>Health Education</h3>
-          <p>Interactive workshops and school programs that teach hygiene, nutrition, sexual health, and disease prevention from an early age.</p>
-          <ul class="program-features">
-            <li>School health talks</li>
-            <li>Nutrition workshops</li>
-            <li>Hygiene campaigns</li>
-          </ul>
         </div>
-        <div class="program-card reveal">
-          <div class="program-icon" style="background: linear-gradient(135deg,#ec489922,#ec489944); color:#ec4899">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 28s-11-6.5-11-14a7 7 0 0 1 11-5.74A7 7 0 0 1 27 14c0 7.5-11 14-11 14z" stroke="currentColor" stroke-width="2"/></svg>
+
+        <!-- Program 4 -->
+        <div class="program-card reveal" style="--prog-color:#ec4899">
+          <div class="program-bg" style="background-image:url('images/prog_maternal.jpg')" data-prog-fallback="https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?w=800&q=80"></div>
+          <div class="program-overlay"></div>
+          <div class="program-body">
+            <div class="program-icon" style="background:rgba(236,72,153,0.2);color:#ec4899">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M16 28s-11-6.5-11-14a7 7 0 0 1 11-5.74A7 7 0 0 1 27 14c0 7.5-11 14-11 14z" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Maternal &amp; Child Health</h3>
+            <p>Dedicated programs supporting expectant mothers and young children with antenatal care, safe delivery education, and postnatal follow-ups.</p>
+            <ul class="program-features">
+              <li>Antenatal clinics</li>
+              <li>Child nutrition support</li>
+              <li>Safe motherhood training</li>
+            </ul>
           </div>
-          <h3>Maternal & Child Health</h3>
-          <p>Dedicated programs supporting expectant mothers and young children with antenatal care, safe delivery education, and postnatal follow-ups.</p>
-          <ul class="program-features">
-            <li>Antenatal clinics</li>
-            <li>Child nutrition support</li>
-            <li>Safe motherhood training</li>
-          </ul>
         </div>
-        <div class="program-card reveal reveal-delay-1">
-          <div class="program-icon" style="background: linear-gradient(135deg,#a855f722,#a855f744); color:#a855f7">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M6 28c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+
+        <!-- Program 5 -->
+        <div class="program-card reveal reveal-delay-1" style="--prog-color:#a855f7">
+          <div class="program-bg" style="background-image:url('images/prog_community.jpg')" data-prog-fallback="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&q=80"></div>
+          <div class="program-overlay"></div>
+          <div class="program-body">
+            <div class="program-icon" style="background:rgba(168,85,247,0.2);color:#a855f7">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M6 28c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Community Support Programs</h3>
+            <p>Connecting vulnerable families to social services, counseling, and resources — because health is more than medicine.</p>
+            <ul class="program-features">
+              <li>Mental health support</li>
+              <li>Social referral network</li>
+              <li>Youth empowerment</li>
+            </ul>
           </div>
-          <h3>Community Support Programs</h3>
-          <p>Connecting vulnerable families to social services, counseling, and resources — because health is more than medicine.</p>
-          <ul class="program-features">
-            <li>Mental health support</li>
-            <li>Social referral network</li>
-            <li>Youth empowerment</li>
-          </ul>
         </div>
-        <div class="program-card reveal reveal-delay-2">
-          <div class="program-icon" style="background: linear-gradient(135deg,#10b98122,#10b98144); color:#10b981">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M8 16l6 6 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="2"/></svg>
+
+        <!-- Program 6 -->
+        <div class="program-card reveal reveal-delay-2" style="--prog-color:#10b981">
+          <div class="program-bg" style="background-image:url('images/prog_mentorship.jpg')" data-prog-fallback="https://images.unsplash.com/photo-1626315869436-d3707ce3b6e4?w=800&q=80"></div>
+          <div class="program-overlay"></div>
+          <div class="program-body">
+            <div class="program-icon" style="background:rgba(16,185,129,0.2);color:#10b981">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M8 16l6 6 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Student Leadership &amp; Mentorship</h3>
+            <p>Developing the next generation of Uganda's medical leaders through mentorship, leadership training, and academic support programs.</p>
+            <ul class="program-features">
+              <li>Peer mentorship</li>
+              <li>Medical school workshops</li>
+              <li>Leadership camps</li>
+            </ul>
           </div>
-          <h3>Student Leadership & Mentorship</h3>
-          <p>Developing the next generation of Uganda's medical leaders through mentorship, leadership training, and academic support programs.</p>
-          <ul class="program-features">
-            <li>Peer mentorship</li>
-            <li>Medical school workshops</li>
-            <li>Leadership camps</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -600,7 +661,7 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>© 2024 Gomba Inspirational Medical Corps (GIMC). All rights reserved.</p>
+        <p>© 2025 Gomba Inspirational Medical Corps (GIMC). All rights reserved.</p>
         <p>Built with 💚 for the communities of Gomba · <a href="https://www.suyel.org" target="_blank">suyel.org</a></p>
       </div>
     </div>

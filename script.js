@@ -252,7 +252,7 @@ document.querySelectorAll('img').forEach(img => {
       'team.png':     'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&q=80',
       'outreach1.png':'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80',
       'edu.png':      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
-      'maternal.png': 'https://images.unsplash.com/photo-1565077228224-fd69cc3e2b5a?w=800&q=80',
+      'prog_maternal.jpg': 'https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?w=800&q=80',
       'hero1.png':    'https://images.unsplash.com/photo-1626315869436-d3707ce3b6e4?w=1600&q=80',
       'hero2.png':    'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=1600&q=80',
       'hero3.png':    'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1600&q=80',
@@ -262,6 +262,38 @@ document.querySelectorAll('img').forEach(img => {
       this.src = fallbacks[filename];
     }
   });
+});
+
+// =====================================================
+// MISSION CARD BG fallback using data-mission-fallback
+// =====================================================
+document.querySelectorAll('.mission-bg[data-mission-fallback]').forEach(bg => {
+  const style = bg.getAttribute('style') || '';
+  const match = style.match(/url\(['"]?([^'"]+)['"]?\)/);
+  const fallbackUrl = bg.getAttribute('data-mission-fallback');
+  if (match && fallbackUrl) {
+    const img = new Image();
+    img.src = match[1];
+    img.onerror = () => {
+      bg.style.backgroundImage = `url('${fallbackUrl}')`;
+    };
+  }
+});
+
+// =====================================================
+// PROGRAM CARD BG fallback using data-prog-fallback
+// =====================================================
+document.querySelectorAll('.program-bg[data-prog-fallback]').forEach(bg => {
+  const style = bg.getAttribute('style') || '';
+  const match = style.match(/url\(['"]?([^'"]+)['"]?\)/);
+  const fallbackUrl = bg.getAttribute('data-prog-fallback');
+  if (match && fallbackUrl) {
+    const img = new Image();
+    img.src = match[1];
+    img.onerror = () => {
+      bg.style.backgroundImage = `url('${fallbackUrl}')`;
+    };
+  }
 });
 
 // =====================================================
