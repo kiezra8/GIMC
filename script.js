@@ -257,9 +257,9 @@ document.querySelectorAll('img').forEach(img => {
       'outreach1.png':'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80',
       'edu.png':      'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
       'prog_maternal.jpg': 'https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?w=800&q=80',
-      'hero1.png':    'https://images.unsplash.com/photo-1626315869436-d3707ce3b6e4?w=1600&q=80',
-      'hero2.png':    'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=1600&q=80',
-      'hero3.png':    'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1600&q=80',
+      'hero1.png':    'https://images.unsplash.com/photo-1626315869436-d3707ce3b6e4?w=2560&q=100',
+      'hero2.png':    'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=2560&q=100',
+      'hero3.png':    'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=2560&q=100',
     };
     const filename = this.src.split('/').pop();
     if (fallbacks[filename]) {
