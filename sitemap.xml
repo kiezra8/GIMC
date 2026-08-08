@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gombamedicalcorps.org/</loc>
     <lastmod>2026-08-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.00</priority>
-    
-    <image:image>
-      <image:loc>https://gombamedicalcorps.org/images/prog_mentorship.jpg</image:loc>
-      <image:title>GIMC Professional Leadership and Mentorship Team</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://gombamedicalcorps.org/images/mission_service.jpg</image:loc>
-      <image:title>GIMC Community Health Outreach and Service</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://gombamedicalcorps.org/images/prog_education.jpg</image:loc>
-      <image:title>Health Education and School Programs in Gomba</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://gombamedicalcorps.org/images/prog_maternal.jpg</image:loc>
-      <image:title>Maternal and Child Health Outreach Camp</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://gombamedicalcorps.org/images/prog_community.jpg</image:loc>
-      <image:title>Community Support and Clinical Services</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://gombamedicalcorps.org/images/prog_preventive.jpg</image:loc>
-      <image:title>Preventive Health Services and Screenings</image:title>
-    </image:image>
   </url>
 </urlset>
