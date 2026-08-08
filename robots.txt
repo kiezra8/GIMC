@@ -1,0 +1,28 @@
+# Global rules for all bots
+User-agent: *
+Allow: /
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Disallow: /cgi-bin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /*?
+
+# Specifically allow Google and Bing
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block known bad scraper bots to save server resources
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Link to the comprehensive sitemap
+Sitemap: https://gombamedicalcorps.org/sitemap.xml
