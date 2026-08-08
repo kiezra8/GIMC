@@ -1,5 +1,5 @@
 /* ============================================================
-   GIMC – Gomba Inspirational Medical Corps
+  GIMC – Gomba Integrated Medical Corps
    Global Stylesheet – Modern Motion Design
    ============================================================ */
 
@@ -355,16 +355,17 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .slide-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0,50,80,0.82) 0%, rgba(10,14,26,0.7) 100%);
+  background: rgba(255,255,255,0.82);
 }
 
 .slide-content {
   position: relative;
   z-index: 3;
+  width: min(800px, 52vw);
   max-width: 800px;
-  margin: 0 auto 0 8vw;
-  padding: 0 1.5rem;
-  padding-top: 6rem;
+  margin: auto 8vw 6vh auto;
+  padding: 0;
+  text-align: right;
 }
 
 .slide-badge {
@@ -390,23 +391,23 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   line-height: 1.15;
   margin-bottom: 1.2rem;
   animation: fadeSlideUp 0.8s 0.15s ease both;
-  text-shadow: 0 4px 30px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 12px rgba(0,0,0,0.75);
 }
 
 .slide-title em {
   font-style: italic;
-  background: linear-gradient(135deg, var(--teal), #60efff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
 }
 
 .slide-text {
   font-size: 1.1rem;
-  color: rgba(255,255,255,0.85);
+  color: #fff;
   margin-bottom: 2rem;
   max-width: 560px;
+  margin-left: auto;
   line-height: 1.8;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.8);
   animation: fadeSlideUp 0.8s 0.3s ease both;
 }
 
@@ -1567,7 +1568,7 @@ cite {
   .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: rgba(10,14,26,0.97); backdrop-filter: blur(20px); border-top: 1px solid var(--border); padding: 1.5rem; gap: 0.5rem; }
   .nav-links.open { display: flex; }
   .nav-toggle { display: flex; }
-  .slide-content { margin: 0 auto; text-align: center; padding: 0 1.5rem; padding-top: 5rem; }
+  .slide-content { width: auto; margin: auto 1.5rem 2.5rem auto; padding: 0; text-align: right; }
   .slide-actions { justify-content: center; }
   .slide-stats { display: none; }
   .hero { height: 100svh; }

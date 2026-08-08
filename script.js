@@ -96,10 +96,10 @@ function initHeroCarousel() {
 
   function goTo(index) {
     slides[current].classList.remove('active');
-    dots[current].classList.remove('active');
+    if (dots.length) dots[current].classList.remove('active');
     current = (index + slides.length) % slides.length;
     slides[current].classList.add('active');
-    dots[current].classList.add('active');
+    if (dots.length) dots[current].classList.add('active');
   }
 
   function startAuto() {
@@ -111,8 +111,8 @@ function initHeroCarousel() {
     startAuto();
   }
 
-  prevBtn.addEventListener('click', () => { goTo(current - 1); resetAuto(); });
-  nextBtn.addEventListener('click', () => { goTo(current + 1); resetAuto(); });
+  if (prevBtn) prevBtn.addEventListener('click', () => { goTo(current - 1); resetAuto(); });
+  if (nextBtn) nextBtn.addEventListener('click', () => { goTo(current + 1); resetAuto(); });
 
   dots.forEach((dot, i) => {
     dot.addEventListener('click', () => { goTo(i); resetAuto(); });

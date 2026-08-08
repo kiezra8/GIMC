@@ -9,7 +9,7 @@
     
     <image:image>
       <image:loc>https://gombamedicalcorps.org/images/prog_mentorship.jpg</image:loc>
-      <image:title>GIMC Student Leadership and Mentorship Team</image:title>
+      <image:title>GIMC Professional Leadership and Mentorship Team</image:title>
     </image:image>
     <image:image>
       <image:loc>https://gombamedicalcorps.org/images/mission_service.jpg</image:loc>
@@ -30,10 +30,6 @@
     <image:image>
       <image:loc>https://gombamedicalcorps.org/images/prog_preventive.jpg</image:loc>
       <image:title>Preventive Health Services and Screenings</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://gombamedicalcorps.org/images/team.png</image:loc>
-      <image:title>Gomba Inspirational Medical Corps Founding Members</image:title>
     </image:image>
   </url>
 </urlset>
