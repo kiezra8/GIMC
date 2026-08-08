@@ -20,16 +20,32 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalOrganization",
-    "name": "Gomba Integrated Medical Corps",
-    "alternateName": "GIMC",
-    "url": "https://gombamedicalcorps.org/",
-    "logo": "https://gombamedicalcorps.org/images/prog_mentorship.jpg",
-    "description": "An association of medical professionals committed to service, professionalism, and community health in Gomba District, Uganda.",
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "Gomba District, Uganda"
-    }
+    "@graph": [
+      {
+        "@type": "MedicalOrganization",
+        "@id": "https://gombamedicalcorps.org/#organization",
+        "name": "Gomba Integrated Medical Corps",
+        "alternateName": "GIMC",
+        "url": "https://gombamedicalcorps.org/",
+        "logo": "https://gombamedicalcorps.org/images/prog_mentorship.jpg",
+        "description": "An association of medical professionals committed to service, professionalism, and community health in Gomba District, Uganda.",
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Gomba District, Uganda"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gombamedicalcorps.org/#website",
+        "url": "https://gombamedicalcorps.org/",
+        "name": "Gomba Integrated Medical Corps",
+        "description": "Medical professionals committed to community health in Gomba District, Uganda.",
+        "publisher": {
+          "@id": "https://gombamedicalcorps.org/#organization"
+        },
+        "inLanguage": "en"
+      }
+    ]
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
